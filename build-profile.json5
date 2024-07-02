@@ -1,0 +1,51 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/forevermeng/.ohos/config/default_SkiaTest_WkgqhmmUX558-xazsJC1RYo_p07DxEkPIR70nxPWe0k=.cer",
+          "storePassword": "0000001A619EA8D0515E2D53E1A8ED31BA3287D1D529A0C0FC393144EF976B52A5E62F5BEE5896C0E511",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001AB1CFBE45B8BD610DBEF985503EEE6C0D64F8CB14FB457D4D35F8475CE8B65260F669091F190E",
+          "profile": "/Users/forevermeng/.ohos/config/default_SkiaTest_WkgqhmmUX558-xazsJC1RYo_p07DxEkPIR70nxPWe0k=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/forevermeng/.ohos/config/default_SkiaTest_WkgqhmmUX558-xazsJC1RYo_p07DxEkPIR70nxPWe0k=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": "4.1.0(11)",
+        "compatibleSdkVersion": "4.1.0(11)",
+        "targetSdkVersion": "4.1.0(11)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
