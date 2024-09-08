@@ -23,7 +23,6 @@ WindowSurface::WindowSurface(NativeWindow* win, std::unique_ptr<skwindow::Window
 
 void WindowSurface::release(napi_env env) {
     fWindowContext.reset();
-    //TODO forevermeng
     // NativeWindow_release(fWindow);
     fSurface.release();
     fWindowContext.release();
